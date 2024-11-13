@@ -46,3 +46,32 @@ To meet the high demand of the accuracy we will test the model with different hy
 <br>An important part of the requirements is an interactive dashboard so the users can test the model with their own images.<br>- *Implementation of the model test interface:*<br>The dashboard will integrate a feature where the user can upload an image and get instant feedback on which flower it is.<br>- *Galleries with each flower:*<br>The dashboard will have a page where the user can choose a flower and then see a gallery with random images of that flower.
 
 
+## Dashboard design
+
+### Page 1: Project summary
+This page will show an overview of the project.
+- General info and business requirements
+- Small summary about the dataset
+- Link to this README file for further information.
+
+### Page 2: Dataset distribution
+This page will show the how the dataset is built with:
+- Image distribution of all categories
+- Color diffirentials through all images
+
+### Page 3: Flower classification
+This page will allow the user to get a class prediction of their images.
+- Image uploader
+- Image prediction: Shows the prediction result with a barplot showing the prediction percentage through all 5 classes.
+
+### Page 4: Project hypotheses and validation
+This page will present all the hypotheses 
+- Hypotheses statements
+- Process to validate each hypothesis
+- Present the outcomes of each hypothesis
+
+### Page 5: ML performance metrics
+This page will display all performance result and metrics to show it´s effectiveness.
+- Model history with learning curve for training and validation sets.
+- Performance metrics with accuracy and confusion matrix
+- Summary if the performance meets the demands.
