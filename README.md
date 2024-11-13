@@ -1,47 +1,36 @@
-# Flower image prediction
+# Flower image predictor
 
-Dataset: https://www.kaggle.com/datasets/kurito/flower-photos
+## Dataset content
 
-## Hypotheses
+The dataset contains 29360 images with 5 different types of flowers, and can be found at [kaggle.com](https://www.kaggle.com/) : [Flower dataset](https://www.kaggle.com/datasets/kurito/).<br>All images in this archive are licensed under the Creative Commons By-Attribution License. <br>To see all the photographers listed, [read this](Image_LICENSE.txt).
 
-1. Does one flower color outstand others in the evaluation of the training?
+## Business requirements
 
-2. Does one more layer in the model change the outcome of the training?
+A primary school is interested in using a "Flower bingo" so that the children can learn about some of the most common flowers in a more fun and creative way. <br>The company that develops the app for the primary school wants a machine classifier that has high prediction accuracy.<br> The company also provided a suggested dataset of images.
 
-3. Does a over-/undersampling of the image dataset make a better result?
+- The client requires that the dataset are studied and results are visualised.
+- The client wants us to develop a machine learning model that can predict with an accuracy higher than 80%.
+- The Client needs a dashboard where they can try our model with live images.
 
-4. Will the model learn better with the mean image shape (365x271) or with 224x224?
+
+## Hypotheses and how to validate them
 
 
-## Model evaluation
+1. Will the model have problems to seperate flowers that has the same color?<br>- We will add the amount of kernels in the later layers to see if the performance will improve.
 
-- first try with this model: `
+2. A deep learning model with convolutional neaural network (CNN) should handle the classification of the different flowers
+<br>- We will use CNN to train the model then test the performance
 
-def create_model():
-    input_shape = (365, 271, 3)  
-    num_classes = 5  
-    model = Sequential()
+3. Does a balanced set of the image dataset make a better result?
+<br>- We will try the model with unbalanced and balanced sets and then compare the results.
 
-    model.add(Conv2D(32, (3, 3), activation='relu', input_shape=input_shape))
-    model.add(MaxPooling2D(pool_size=(2, 2)))
+4. Tuning the hyperparameters will improve the performance of the model.
+<br>- Test with basic settings then tune to get a better score.
 
-    model.add(Conv2D(64, (3, 3), activation='relu'))
-    model.add(MaxPooling2D(pool_size=(2, 2)))
+## The rationale to map the business requirements to the data visualizations and ML tasks
 
-    model.add(Conv2D(128, (3, 3), activation='relu'))
-    model.add(MaxPooling2D(pool_size=(2, 2)))
+### Purpose and goals with the project
+The project is to create a "Flower bingo"-app to help school children learn to recognize common flowers. Meeting the clients requirements and delivering a user-friendly solution requires specific data and visualization steps as well as machine learning models to achive the expected performance.
 
-    model.add(Flatten())
-    model.add(Dense(128, activation='relu'))
-    model.add(Dropout(0.5))  # Dropout för att förhindra överträning
-    model.add(Dense(num_classes, activation='softmax'))  # Softmax för klassificering
 
-    model.compile(optimizer='adam', 
-                  loss='categorical_crossentropy', 
-                  metrics=['accuracy'])
 
-    model.summary()
-    
-    return model
-
-<img src="outputs/v1/mean_value_image_first_model.png">
