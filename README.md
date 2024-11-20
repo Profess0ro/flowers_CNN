@@ -75,3 +75,16 @@ This page will display all performance result and metrics to show it´s effectiv
 - Model history with learning curve for training and validation sets.
 - Performance metrics with accuracy and confusion matrix
 - Summary if the performance meets the demands.
+
+<hr>
+
+## Problems encountered
+
+1. **Slow model run** <br>Started model run without rescaling to preferred image size (224 x 224). Instead ran the model with original size and the performance was really bad!<br>**- Solution:** added `input_shape=(224, 224, 3)` to the model and the performance greatly increased, aslo the runtime went down very much!
+
+2. **Pushing large amount to GitHub**<br> Since the images total size is over 2Gb when having both raw and balanced image sets. The commits I´ve made for a while didn´t upload since I´ve overrided the standardlimit of 2Gb per push.<br>**Solution:** Used `git lfs` for pushing large amount to GitHub. [read more about git lfs](https://git-lfs.com/)
+
+## Resources
+
+- [Flower image on app page](https://unsplash.com/photos/selective-focus-photography-red-and-yellow-petaled-flowers-3NBp815cd5Q)<br>
+- [Emojis for dashboard](https://emojipedia.org/)
