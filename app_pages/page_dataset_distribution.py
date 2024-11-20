@@ -1,4 +1,7 @@
 import streamlit as st
+import os
+import random
+from PIL import Image
 
 version = 'v2'
 
@@ -37,3 +40,26 @@ def page_dataset_body():
                    The higher the value, the greater the difference in the color distributions 
                    between the flowers.
                    """)
+
+    if st.checkbox(
+            'Display montage of random images of all flowers'
+            ):
+            
+            sample_images_dir = "outputs/sample_images"
+            categories = [folder for folder in os.listdir(sample_images_dir) if os.path.isdir(os.path.join(sample_images_dir, folder))]
+            
+            category = st.selectbox("Choose flower category", categories)
+            
+            flower_dir = os.path.join(sample_images_dir, category)
+                
+            if os.path.exists(flower_dir):
+                    images = random.sample(os.listdir(flower_dir), 6)  
+                    image_paths = [os.path.join(flower_dir, image) for image in images]
+                    
+                    
+                    cols = st.columns(3)  
+                    for i, image_path in enumerate(image_paths):
+                        img = Image.open(image_path)
+                        cols[i % 3].image(img, use_container_width=True)
+            else:
+                    st.warning(f"Folder for {category} not found.")
