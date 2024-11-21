@@ -7,14 +7,12 @@ import pickle
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
 version = 'v2'
 model_path = f"outputs/{version}/flower_prediction_model.h5"
 model = load_model(model_path)
 
 with open(f"outputs/{version}/labels.pkl", "rb") as f:
     labels = pickle.load(f)
-    
 
 def page_classifier_body():
     st.header("Flower Classifier")
@@ -30,9 +28,9 @@ def page_classifier_body():
         
         # Prepare the image
         image = Image.open(uploaded_image)
-        image = image.resize((224, 224))
-        image_array = np.array(image) / 255.0
-        image_array = np.expand_dims(image_array, axis=0)
+        image = image.resize((224, 224))  # Ensure the image is resized to the input size of the model
+        image_array = np.array(image) / 255.0  # Normalize the image
+        image_array = np.expand_dims(image_array, axis=0)  # Add batch dimension
         
         # Make predictions
         prediction = model.predict(image_array)
