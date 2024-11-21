@@ -8,4 +8,5 @@ jupyter_notebooks/
 inputs/
 image_LICENSE.txt
 README.md
-requirements.txt
+outputs/v2/
+desktop.ini
