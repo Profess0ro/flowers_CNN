@@ -132,7 +132,7 @@ Renders have been used instead of Heroku for this deployment. Since the packages
 
 1. **Slow model run** <br>Started model run without rescaling to preferred image size (224 x 224). Instead ran the model with original size and the performance was really bad!<br>**- Solution:** added `input_shape=(224, 224, 3)` to the model and the performance greatly increased, aslo the runtime went down very much!
 
-2. **Pushing large amount to GitHub**<br> Since the images total size is over 2Gb when having both raw and balanced image sets. The commits I´ve made for a while didn´t upload since I´ve overrided the standardlimit of 2Gb per push.<br>**Solution:** Copied my files on the computer then made a hard reset. Then copied the files with changes and then added `input/` in `.gitignore`
+2. **Pushing large amount to GitHub**<br> Since the images total size is over 2Gb when having both raw and balanced image sets. The commits I´ve made for a while didn´t upload since I´ve overrided the standardlimit of 2Gb per push.<br>**Solution:** Copied my files on the computer then made a hard reset. Then copied the files with changes and then added `inputs/` in `.gitignore`
 
 ## Resources
 
