@@ -1,10 +1,12 @@
 # Flower image predictor
 
+<img src="images/flowers.jpg><br>
+
 https://flower-bingo.onrender.com/
 
 ## Dataset content
 
-The dataset contains 29360 images with 5 different types of flowers, and can be found at [kaggle.com](https://www.kaggle.com/) : [Flower dataset](https://www.kaggle.com/datasets/kurito/).<br>All images in this archive are licensed under the Creative Commons By-Attribution License. <br>To see all the photographers listed, [read this](Image_LICENSE.txt).
+The dataset contains 29360 images with 5 different types of flowers, and can be found at [kaggle.com](https://www.kaggle.com/) : [Flower dataset](https://www.kaggle.com/datasets/kurito/flower-photos).<br>All images in this archive are licensed under the Creative Commons By-Attribution License. <br>To see all the photographers listed, [read this](Image_LICENSE.txt).
 
 ## Business requirements
 
@@ -80,6 +82,33 @@ This page will display all performance result and metrics to show it´s effectiv
 
 <hr>
 
+## Deployment
+
+### GitHub
+1. Log in to your GitHub account.
+2. Create a repository by click on 'New' at the repositories page.
+3. Go into your repository [This repository](https://github.com/Profess0ro/flowers_CNN) and click on 'Code' and copy the link.
+4. Open VS code and choose 'Clone git repository..' now paste the link in the command file at the top: `https://github.com/Profess0ro/flowers_CNN.git` and choose a local storage in the window that pops up.
+
+### Deploy in development environment
+
+1. Open your repository `https://github.com/Profess0ro/flowers_CNN.git` with your choice of workspace (VS code or GitPod)
+2. Install required dependencies with	`pip3 -r requirements.txt`
+3. If any package additions been made, don´t forget to use `pip3 freeze > requirements.txt`
+4. Run this app with the command `streamlit run app.py`
+5. Commit and push to GitHub.
+
+### Render
+
+Renders have been used instead of Heroku for this deployment. Since the packages only was larger than Heroku´s slug size of 500Mb. Render are a little bit slower hosting site, but it works for showing this project.
+
+1. Create or log in to your account at [Render](https://render.com/)
+2. Click on "+ New" and select "New static site"
+3. Choose "Public Git Repository" and paste your URL to the repository. For this project: "https://github.com/Profess0ro/flowers_CNN"
+4. Click on "Connect"
+5. Fill in follow fields:<br>- name<br>- branch<br>- build command<br>- publish directory<br>- start command (streamlit run app.py)
+6. Click on "Deploy static site"
+
 ## Packages used
 
 - [joblib](https://pypi.org/project/joblib/) - A library for saving, loading, and parallelizing Python objects, optimized for large data.<br>
@@ -108,4 +137,10 @@ This page will display all performance result and metrics to show it´s effectiv
 ## Resources
 
 - [Flower image on app page](https://unsplash.com/photos/selective-focus-photography-red-and-yellow-petaled-flowers-3NBp815cd5Q)<br>
-- [Emojis for dashboard](https://emojipedia.org/)
+- [Emojis for dashboard](https://emojipedia.org/)<br>
+- [Image dataset](https://www.kaggle.com/datasets/kurito/flower-photos)
+
+## Credits
+
+- Credits to all the loving and sharing people in [the swedish slack channel](https://app.slack.com/client/T0L30B202/C03J2BCURV3)<br>
+- Extra cred to [Niclas](https://app.slack.com/client/T0L30B202/D07LLC9HRLZ) for helping me clarify some uncertainties.
