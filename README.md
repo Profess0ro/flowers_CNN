@@ -80,6 +80,25 @@ This page will display all performance result and metrics to show it´s effectiv
 
 <hr>
 
+## Packages used
+
+- [joblib](https://pypi.org/project/joblib/) - A library for saving, loading, and parallelizing Python objects, optimized for large data.<br>
+- [jsonschema](https://python-jsonschema.readthedocs.io/en/stable/) - Validates JSON data against a defined schema to ensure correct structure and format <br>
+- [keras](https://pypi.org/project/keras/) - A high-level neural networks API for building and training deep learning models.<br>
+- [matplotlib](https://pypi.org/project/matplotlib/) - A library for creating static visualizations in Python.<br>
+- [numpy](https://pypi.org/project/numpy/2.0.2/) - A library for numerical computing, providing support for arrays and mathematical operations.<br>
+- [opencv-python](https://pypi.org/project/opencv-python/) - A library for computer vision tasks like image processing, object detection, and video analysis.<br>
+- [pandas](https://pypi.org/project/pandas/) -  A library for data manipulation and analysis, offering data structures like DataFrames and Series.<br>
+- [pillow](https://pypi.org/project/pillow/) - A library for image processing tasks like opening, editing, and saving image files.<br>
+- [scikit-learn](https://pypi.org/project/scikit-learn/) - A machine learning library providing tools for data preprocessing, model training, and evaluation.<br>
+- [scipy](https://pypi.org/project/scipy/) - A library for scientific and technical computing, offering functions for optimization, integration, and signal processing.<br>
+- [seaborn](https://pypi.org/project/seaborn/) - A data visualization library built on Matplotlib, providing high-level interfaces for drawing attractive and informative statistical graphics.<br>
+- [streamlit](https://pypi.org/project/streamlit/) - A framework for building interactive web apps for data science and machine learning projects with minimal coding.<br>
+- [tensorboard](https://pypi.org/project/tensorboard/) - A tool for visualizing and monitoring TensorFlow model training, including metrics like loss, accuracy, and model graphs.<br>
+- [tensorboard-data-server](https://pypi.org/project/tensorboard-data-server/) - A lightweight server for managing and serving TensorBoard logs, enabling efficient visualization of training data.<br>
+- [tensorflow](https://pypi.org/project/tensorflow/) - An open-source machine learning framework for building and deploying deep learning models, supporting neural networks and other ML tasks.<br>
+
+
 ## Problems encountered
 
 1. **Slow model run** <br>Started model run without rescaling to preferred image size (224 x 224). Instead ran the model with original size and the performance was really bad!<br>**- Solution:** added `input_shape=(224, 224, 3)` to the model and the performance greatly increased, aslo the runtime went down very much!
