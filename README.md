@@ -1,6 +1,6 @@
 # Flower image predictor
 
-<img src="images/flowers.jpg><br>
+<img src="images/flowers.jpg">
 
 https://flower-bingo.onrender.com/
 
