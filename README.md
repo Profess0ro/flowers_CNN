@@ -1,8 +1,21 @@
 # Flower image predictor
 
-<img src="images/flowers.jpg">
+<img src="images/flowers.jpg"><br>
 
-https://flower-bingo.onrender.com/
+[Link to live page](https://flower-bingo.onrender.com/)
+
+
+- [Dataset content](#dataset-content)<br>
+- [Business requirements](#business-requirements)<br>
+- [Hypotheses](#hypotheses-and-how-to-validate-them)<br>
+- [The rationale map](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)<br>
+- [Dashboard design](#dashboard-design)<br>
+- [Deployment](#deployment)<br>
+- [Packages used](#packages-used)<br>
+- [Problems encounterd](#problems-encountered)<br>
+- [Resources](#resources)<br>
+- [Credits](#credits)<br>
+
 
 ## Dataset content
 
