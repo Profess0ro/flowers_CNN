@@ -35,3 +35,9 @@ def page_performance_body():
         st.error(f"The file {evaluation_path} does not exist.")
     except Exception as e:
         st.error(f"An error occured: {e}")
+
+    st.warning("""
+        As shown in the confusion matrix, the model has difficulty distinguishing between tulips and roses, 
+        often misclassifying images of one as the other. For a more detailed analysis and potential solutions, 
+        please refer to the README file.
+    """)
