@@ -1,7 +1,7 @@
 import streamlit as st
 
 def page_summary_body():
-    st.image("images/flowers.jpg")
+    st.image("images/app_pages/flowers.jpg")
     st.header("Project Summary")
     st.info("""
             🌻 **General info:**

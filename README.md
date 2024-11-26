@@ -12,7 +12,7 @@
 - [Dashboard design](#dashboard-design)<br>
 - [Deployment](#deployment)<br>
 - [Packages used](#packages-used)<br>
-- [Problems encounterd](#problems-encountered)<br>
+- [Problems encountered](#problems-encountered)<br>
 - [Resources](#resources)<br>
 - [Credits](#credits)<br>
 
@@ -63,6 +63,7 @@ To meet the high demand of the accuracy we will test the model with different hy
 <br>An important part of the requirements is an interactive dashboard so the users can test the model with their own images.<br>- *Implementation of the model test interface:*<br>The dashboard will integrate a feature where the user can upload an image and get instant feedback on which flower it is.<br>- *Galleries with each flower:*<br>The dashboard will have a page where the user can choose a flower and then see a gallery with random images of that flower.
 
 
+
 ## Dashboard design
 
 ### Page 1: Project summary
@@ -92,6 +93,27 @@ This page will display all performance result and metrics to show it´s effectiv
 - Model history with learning curve for training and validation sets.
 - Performance metrics with accuracy and confusion matrix
 - Summary if the performance meets the demands.
+
+
+## Problem with the model
+
+<img src="outputs/v2/flower_similarity_heatmap.png"><br>
+As we can see in this heatmap, the colors in the categories of tulips and roses are nearest eachother. This makes the prediction between these two categories the hardest for this model. And if we look at the classification report and the confusion matrix, this also shows that the model having problems with predicting these two categories.
+
+<img src="images/readme/classification_report.png"><br>
+<img src="outputs/v2/confusion_matrix.png"><br>
+
+**Here are some examples when the model predicts with barely majority and with the wrong category:**<br><br>
+<img src="images/readme/confusion_1a.jpg" width=50% height="auto"><img src="images/readme/confusion_2a.jpg" width=50% height="auto"><br>
+<img src="images/readme/confusion_1b.png" width=50% height="auto"><img src="images/readme/confusion_2b.png" width=50% height="auto"><br>
+These examples barely have majority on the right class. <br>But here are a prediction that shows roses instead of tulips that are on the image:<br>
+<img src="images/readme/confusion_3a.jpg" width=50% height=50%><img src="images/readme/confusion_3b.png" width=50% height="auto"><br> 
+
+
+**How to improve this:**<br>
+To get a better performance between these two categories I would investigate more specific technics that can extract functions to color deviances and the structure of the petals.
+
+
 
 <hr>
 
