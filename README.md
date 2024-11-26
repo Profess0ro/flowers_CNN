@@ -10,7 +10,7 @@
 - [Hypotheses](#hypotheses-and-how-to-validate-them)<br>
 - [The rationale map](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)<br>
 - [Dashboard design](#dashboard-design)<br>
-- [Problem with the model](#problem-with-the-model)<br>
+- [Issue with the model](#issue-with-the-model)<br>
 - [Deployment](#deployment)<br>
 - [Packages used](#packages-used)<br>
 - [Problems encountered](#problems-encountered)<br>
@@ -96,7 +96,7 @@ This page will display all performance result and metrics to show it´s effectiv
 - Summary if the performance meets the demands.
 
 
-## Problem with the model
+## Issue with the model
 
 <img src="outputs/v2/flower_similarity_heatmap.png"><br>
 As we can see in this heatmap, the colors in the categories of tulips and roses are nearest eachother. This makes the prediction between these two categories the hardest for this model. And if we look at the classification report and the confusion matrix, this also shows that the model having problems with predicting these two categories.
