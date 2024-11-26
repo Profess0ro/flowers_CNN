@@ -19,7 +19,7 @@
 
 ## Dataset content
 
-The dataset contains 29360 images with 5 different types of flowers, and can be found at [kaggle.com](https://www.kaggle.com/) : [Flower dataset](https://www.kaggle.com/datasets/kurito/flower-photos).<br>All images in this archive are licensed under the Creative Commons By-Attribution License. <br>To see all the photographers listed, [read this](Image_LICENSE.txt).
+The dataset contains 29360 images with 5 different types of flowers, and can be found at [Flower dataset](https://www.kaggle.com/datasets/kurito/flower-photos).<br>The flower species that are represented are: daisys, dandelions, sunflowers, roses and tulips.<br>All images in this archive are licensed under the Creative Commons By-Attribution License. <br>To see all the photographers listed, [read this](Image_LICENSE.txt).
 
 ## Business requirements
 
