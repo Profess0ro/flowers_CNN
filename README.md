@@ -1,6 +1,6 @@
 # Flower image predictor
 
-<img src="images/flowers.jpg"><br>
+<img src="images/app_pages/flowers.jpg"><br>
 
 [Link to live page](https://flower-bingo.onrender.com/)
 
@@ -10,6 +10,7 @@
 - [Hypotheses](#hypotheses-and-how-to-validate-them)<br>
 - [The rationale map](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)<br>
 - [Dashboard design](#dashboard-design)<br>
+- [Problem with the model](#problem-with-the-model)<br>
 - [Deployment](#deployment)<br>
 - [Packages used](#packages-used)<br>
 - [Problems encountered](#problems-encountered)<br>
