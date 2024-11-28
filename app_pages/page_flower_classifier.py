@@ -19,6 +19,7 @@ def page_classifier_body():
     st.info("""
             Upload an image of a flower to see the predicted class along with the confidence level. 
             You will also see a barplot showing the model's confidence across all categories. 
+            (Daisies, Dandelions, Sunflowers, Roses and Tulips) 
             """)
 
     uploaded_image = st.file_uploader("Upload a flower image", type=["jpg", "png", "jpeg"])
