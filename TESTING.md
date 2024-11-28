@@ -34,10 +34,71 @@
 <hr>
 <img src="images/testing/data_distribution_test3a.png"><br>
 <img src="images/testing/data_distribution_test3b.png"><br>
+<img src="images/testing/data_distribution_test4a.png"><br>
+
+</details>
+</details>
+
+
+<details>
+<summary>Image montage</summary>
+<br>
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Displaying montage of Tulips | When selecting "Tulips", a montage with 6 random images of tulips will show | Selected "Tulips" | 6 random images of tulips was shown | Pass |
+| Displaying montage of Sunflowers | When selecting "Sunflowers", a montage with 6 random images of sunflowers will show | Selected "Sunflowers" | 6 random images of sunflowers was shown | Pass |
+| Displaying montage of Daisies | When selecting "Daisies", a montage with 6 random images of Daisies will show | Selected "Daisies" | 6 random images of daisies was shown | Pass |
+| Displaying montage of Roses | When selecting "Roses", a montage with 6 random images of roses will show | Selected "Roses" | 6 random images of roses was shown | Pass |
+| Displaying montage of Dandelions | When selecting "Dandelions", a montage with 6 random images of dandelions will show | Selected "Dandelions" | 6 random images of dandelions was shown | Pass |
+
+<details>
+<summary><strong>Images from the test</strong></summary>
+<br>
+
+<img src="images/testing/data_distribution_test4b.png"><br>
+<img src="images/testing/data_distribution_test4c.png"><br>
+<img src="images/testing/data_distribution_test4d.png"><br>
+<img src="images/testing/data_distribution_test4e.png"><br>
+<img src="images/testing/data_distribution_test4f.png"><br>
+
+</details>
+</details>
+
+
+<details>
+<summary>Flower classifier</summary>
+<br>
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Uploading file with wrong extension | When trying to upload a file with the wrong extension it will raise an error that the file are not allowed | Tried to upload a .pdf-file | An error was raised that the file wasn´t allowed | Pass |
+| Uploading an image with flower | When uploading an image of a flower the model will predict and show percentage through all classes highlighting the predicted class with the percentage | Uploaded an image of daisies | My uploaded image was shown with the prediction and all percentage through the classes | Pass |
+
+
+<details>
+<summary><strong>Images from the test</strong></summary>
+<br>
+
+<img src="images/testing/flower_classifier_test1.png"><br><hr>
+<img src="images/testing/flower_classifier_test2.png"><br>
+<img src="images/testing/flower_classifier_test3.png"><br>
+
+</details>
+</details>
+
+
+<details>
+<summary>Project hypotheses and ML Performance metrics</summary>
+<br>
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Project hypotheses page showing correct info | When navigated to the Project hypotheses page the info about the hypotheses and validations will be shown | Navigated to hypotheses page | On the project hypotheses page the correct information was shown | Pass |
+| ML Performance metrics page showing correct info | When navigated to the ML Performance metrics page, all the images and info will be visual and correct | Navigated to the ML Performance metrics page | All the correct images and information was shown on the page | Pass |
 
 </details>
 
-</details>
 
 ## Issue with the model
 <details>
