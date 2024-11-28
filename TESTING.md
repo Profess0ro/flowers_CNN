@@ -15,6 +15,29 @@
 
 </details>
 
+<details>
+<summary>Dataset distribution page</summary>
+<br>
+<img src="images/testing/data_distribution_test.png">
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Display image distribution | When clicking on "Display image distribution through all flower species", the image of the barplot of the distribution will show and also the amount of the images in every category. | Clicked on "Display image distribution through all flower species" | The barplot and amount of the distribution was shown | Pass |
+| Display color variation | When clicking on "Display the color variation through all images", the image and info about the color variation will show | Clicked on "Display the color variation through all images" | The scatterplot,heatmap and info about the color variations was shown | Pass |
+| Display image montages | When clicking on "Display montage of random images of all flowers", the image montage showing random images of all categories will be shown | Clicked on "Display montage of random images of all flowers" | The image montage where the user can choose category was shown | Pass |
+
+<details>
+<summary><strong>Images from the test</strong></summary>
+<br>
+
+<img src="images/testing/data_distribution_test2.png"><br>
+<hr>
+<img src="images/testing/data_distribution_test3a.png"><br>
+<img src="images/testing/data_distribution_test3b.png"><br>
+
+</details>
+
+</details>
 
 ## Issue with the model
 <details>
