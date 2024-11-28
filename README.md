@@ -11,6 +11,8 @@
 - [The rationale map](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)<br>
 - [Dashboard design](#dashboard-design)<br>
 - [CRISP-MD](#crisp-dm-framework-and-its-application-in-this-project)<br>
+- [Testing](#Testing)<br>
+- [Changelog](#changelog)<br>
 - [Deployment](#deployment)<br>
 - [Packages used](#packages-used)<br>
 - [Problems encountered](#problems-encountered)<br>
@@ -160,6 +162,14 @@ Based on the project findings, the following actions are recommended:<br>- Furth
 To get a better performance between these two categories I would investigate more specific technics that can extract functions to color deviances and the structure of the petals.
 
 <hr>
+
+## Testing
+
+[Here](TESTING.md) can you read about my manual testing on the dashboard
+
+## Changelog
+
+[Here](CHANGELOG.md) can you read about the changes that has been to the model
 
 ## Deployment
 
