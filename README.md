@@ -13,6 +13,7 @@
 - [CRISP-MD](#crisp-dm-framework-and-its-application-in-this-project)<br>
 - [Testing](#Testing)<br>
 - [Changelog](#changelog)<br>
+- [User stories](#user-stories)<br>
 - [Deployment](#deployment)<br>
 - [Packages used](#packages-used)<br>
 - [Problems encountered](#problems-encountered)<br>
@@ -170,6 +171,10 @@ To get a better performance between these two categories I would investigate mor
 ## Changelog
 
 [Here](CHANGELOG.md) can you read about the changes that has been to the model
+
+## User stories
+
+[Link](https://github.com/users/Profess0ro/projects/10) to canban board
 
 ## Deployment
 
