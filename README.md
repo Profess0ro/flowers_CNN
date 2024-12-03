@@ -237,4 +237,5 @@ Renders have been used instead of Heroku for this deployment. Since the packages
 ## Credits
 
 - Credits to all the loving and sharing people in [the swedish slack channel](https://app.slack.com/client/T0L30B202/C03J2BCURV3)<br>
-- Extra cred to [Niclas](https://app.slack.com/client/T0L30B202/D07LLC9HRLZ) for helping me clarify some uncertainties.
+- Extra cred to [Niclas](https://app.slack.com/client/T0L30B202/D07LLC9HRLZ) for helping me clarify some uncertainties.<br>
+- My mentor [Rohit](https://app.slack.com/client/T0L30B202/D06Q6HHFBE0) for helping me through this project.
