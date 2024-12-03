@@ -174,7 +174,7 @@ To get a better performance between these two categories I would investigate mor
 
 ## User stories
 
-[Link](https://github.com/users/Profess0ro/projects/10) to canban board
+[Link](https://github.com/users/Profess0ro/projects/10) to kanban board
 
 ## Deployment
 
